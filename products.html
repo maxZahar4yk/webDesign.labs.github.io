@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GIX - Товари</title>
+      <!--Icon--> 
+   <link rel="icon" type="image/png" href="images/favicon.svg">
+       <!--СSS  and JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bez.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <!--preloader-->
+  <div id="preloader">
+    <div class="p"><img src="images/logo-default-380x100.svg" width="350" height="150"/></div>
+</div>
+<div id="breaker"></div>
+    <!--menu-->
+        <div class="navigation">
+        
+          <div class="logo home-link fade-down">
+           <a href="#">Gaming InnovationX</a>
+          </div>
+        
+          <div class="navigation-links">
+            <ul>
+              <li class="links goods-link fade-down"><a href="index.html">Головна</a></li>
+            </ul>
+          </div>
+        
+        </div>
+    <br><br><br><br>
+
+<!--filters and sort-->
+     <div class="filter-container">
+        <div class="filters">
+        <label for="category-select" style="color: white;">Категорія:</label>
+        <select id="category-select" class="filter-button">
+            <option value="all">Усі</option>
+            <option value="category1" class="f">Комплектуючі</option>
+            <option value="category2">Периферійні пристрої</option>
+             <option value="category3">Для геймерів</option>
+              <option value="category4">Ігрові ноутбуки</option>
+        </select>
+
+        <label for="sort-select" class="filter-text">Сортування:</label>
+        <select id="sort-select" class="filter-button">
+            <option value="price-asc">Ціна (за зростанням)</option>
+            <option value="price-desc">Ціна (за спаданням)</option>
+        </select>
+    </div>
+
+    </div>
+    
+<!--goods-->
+    <div class="products">
+         <div class="product" data-category="category1" data-price="31500">
+            <img src="images/i9.jpeg">
+            <h2>Intel Core i9-13900K</h2>
+            <p>31 500 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category1" data-price="7000">
+            <img src="images/ssd.png">
+            <h2>SSD накопичувач Samsung 970 EVO Plus 2 TB</h2>
+            <p>7 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category1" data-price="5800">
+            <img src="images/ddr.jpg">
+            <h2>ОЗУ Kingston DDR5 32GBB</h2>
+            <p>5 800 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category1" data-price="42000">
+            <img src="images/asus_rog.jpg">
+            <h2>Материнська плата Asus ROG MAXIMUS Z690 EXTREME</h2>
+            <p>42 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category2" data-price="10000">
+            <img src="images/keyboard.jpg">
+            <h2>МRazer BlackWidow V4 Pro Green Switch</h2>
+            <p>10 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category2" data-price="1200">
+            <img src="images/mouse.png">
+            <h2>Мишка A4Tech Bloody X5 Pro Black</h2>
+            <p>1 200 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category2" data-price="85000">
+            <img src="images/monitor1.png">
+            <h2>Монитор 26.5" Asus ROG Swift OLED 570 Гц.</h2>
+            <p>85 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category2" data-price="4000">
+            <img src="images/monitor1.png">
+            <h2>Наушники Razer Kraken V3</h2>
+            <p>4 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+         <div class="product" data-category="category3" data-price="110000">
+            <img src="images/nvidia_4090.jpg">
+            <h2>Відеокарта NVIDIA GeForce RTX 4090 24 GB</h2>
+            <p>110 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category3" data-price="13000">
+            <img src="images/water.jpeg">
+            <h2>Водяна система охолодження комп'ютера Razer Hanbo Chroma RGB</h2>
+            <p>13 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category3" data-price="18000">
+            <img src="images/chear.jpg">
+            <h2>Комп'ютерне крісло  Razer Enki Green</h2>
+            <p>18 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category3" data-price="83000">
+            <img src="images/chear.jpg">
+            <h2>Відеокарта GIGABYTE GeForce RTX 4090 24GB</h2>
+            <p>83 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category4" data-price="65000">
+            <img src="images/nitro5.webp">
+            <h2>Ноутбук Acer Nitro 5 AN517-41-R8F9</h2>
+            <p>65 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category4" data-price="80000">
+            <img src="images/tuf.jpg">
+            <h2>Ноутбук ASUS TUF Gaming A17 (2023)</h2>
+            <p>80 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category4" data-price="262000">
+            <img src="images/rog.jpeg">
+            <h2>Ноутбук ASUS ROG Strix G18</h2>
+            <p>262 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+        <div class="product" data-category="category4" data-price="90000">
+            <img src="images/prtdator.jpg">
+            <h2>Ноутбук Acer Predator Helios Neo 16</h2>
+            <p>90 000 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1" style="color: white;">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>    
+    </div>
+
+<!--cart -->
+<div id="cart-icon" class="cart-icon">🛒
+  <span id="cart-count" class="cart-icon-text">0</span>
+</div>
+
+<div id="cart-container" class="cart-container">
+  <div id="cart">
+    <div id="cart-items">
+      <!-- Вміст корзини буде автоматично додаватися тут -->
+    </div>
+    <div class="cart-total">
+      <p>Загальна сума:  <span id="cart-total-amount">$0.00</span></p>
+    </div>
+    <button id="clear-cart" class="cart-button">Очистити корзину</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <script>
+// Buttons + and - to change quantity of goods
+        const quantityButtons = document.querySelectorAll(".quantity-button");
+    quantityButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const input = button.parentElement.querySelector(".quantity");
+            let value = parseInt(input.value);
+
+            if (button.classList.contains("plus")) {
+                value++;
+            } else if (button.classList.contains("minus")) {
+                value = Math.max(1, value - 1);
+            }
+
+            input.value = value;
+        });
+    });
+
+//cart variable
+const cart = [];
+const cartContainer = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+
+
+
+// function to update cart in real time
+function updateCart() {
+    cartContainer.innerHTML = ""; 
+
+    let total = 0;
+
+    for (const item of cart) {
+        const cartItem = document.createElement("li");
+        cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" >
+            <span class="cart-item-name">${item.name}</span>
+            <span class="cart-item-price">${item.price * item.quantity} грн</span>
+            <input class="cart-item-quantity" type="number" value="${item.quantity}" min="1">
+            <button class="remove-from-cart">Вилучити</button>
+        `;
+
+        cartContainer.appendChild(cartItem);
+
+        // renew total cost of cart
+        total += item.price * item.quantity;
+    }
+    var cart1 = document.getElementById("cart");
+    var totalText1 = cart1.querySelector(".cart-total");
+     if (totalText1) {
+        totalText1.textContent = `Загальна сума: ${total} грн`;
+    }const cartCount = document.getElementById("cart-count");
+    cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+
+     const clearCartButton = document.getElementById("clear-cart");
+    clearCartButton.addEventListener("click", function () {
+        cart.length = 0; // clear cart array
+        updateCart();
+    });
+}
+
+// add goods to cart function
+document.querySelector(".products").addEventListener("click", (event) => {
+    if (event.target.classList.contains("add-to-cart")) {
+        const product = event.target.parentElement;
+        const productName = product.querySelector("h2").textContent;
+        const productPrice = parseFloat(product.getAttribute("data-price"));
+        const productQuantity = parseInt(product.querySelector(".quantity").value);
+        const imgSrc = product.querySelector('img').src;
+
+        const existingItem = cart.find((item) => item.name === productName);
+
+        if (existingItem) {
+            existingItem.quantity += productQuantity;
+        } else {
+            const cartItem = { name: productName, price: productPrice, quantity: productQuantity, image: imgSrc };
+            cart.push(cartItem);
+        }
+
+        updateCart();
+    }
+});
+
+
+// delete good from cart
+document.getElementById("cart").addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove-from-cart")) {
+        const itemIndex = Array.from(event.target.parentElement.parentElement.children).indexOf(event.target.parentElement);
+        cart.splice(itemIndex, 1); // Видаляємо товар з корзини
+        updateCart();
+    }
+});
+
+// renew cost of good in cart
+document.getElementById("cart").addEventListener("input", (event) => {
+    if (event.target.classList.contains("cart-item-quantity")) {
+        const newQuantity = parseInt(event.target.value);
+        const itemIndex = Array.from(event.target.parentElement.parentElement.children).indexOf(event.target.parentElement);
+        cart[itemIndex].quantity = newQuantity; 
+        updateCart();
+    }
+});
+
+       // element to sort
+const categorySelect = document.getElementById("category-select");
+const sortSelect = document.getElementById("sort-select");
+const productsContainer = document.querySelector(".products");
+const products = Array.from(document.querySelectorAll(".product"));
+
+// set event to buttons
+categorySelect.addEventListener("change", filterProducts);
+sortSelect.addEventListener("change", sortProducts);
+
+// function to sort goods
+function filterProducts() {
+    const selectedCategory = categorySelect.value;
+
+    products.forEach((product) => {
+        const category = product.getAttribute("data-category");
+        if (selectedCategory === "all" || category === selectedCategory) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+
+function sortProducts() {
+    const selectedSort = sortSelect.value;
+    
+    products.sort((a, b) => {
+        const priceA = parseFloat(a.getAttribute("data-price"));
+        const priceB = parseFloat(b.getAttribute("data-price"));
+
+        if (selectedSort === "price-asc") {
+            return priceA - priceB;
+        } else {
+            return priceB - priceA;
+        }
+    });
+    productsContainer.innerHTML = "";
+
+    products.forEach((product) => {
+        productsContainer.appendChild(product);
+    });
+}
+
+filterProducts();
+sortProducts();
+
+    </script>
+</body>
+</html>
